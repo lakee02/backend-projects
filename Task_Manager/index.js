@@ -2,6 +2,7 @@ const express=require('express');
 const app=express();
 const tasks=require('./routes/tasks')
 const port=3000
+require('./db/connect');
 
 app.use(express.json());
 
